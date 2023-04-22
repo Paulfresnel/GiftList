@@ -1,4 +1,4 @@
-const MerkleTree = require('./MerkleTree');
+const MerkleTree = require('../react-client/src/utils/MerkleTree');
 const niceList = require('./niceList');
 const verifyProof = require('./verifyProof');
 
@@ -7,7 +7,6 @@ const merkleTree = new MerkleTree(niceList);
 
 // get the root
 const root = merkleTree.getRoot();
-
 // find the proof that norman block is in the list 
 const name = 'Norman Block';
 const index = niceList.findIndex(n => n === name);

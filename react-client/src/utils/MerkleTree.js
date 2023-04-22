@@ -1,5 +1,7 @@
 const { keccak256 } = require('ethereum-cryptography/keccak');
 const { bytesToHex } = require('ethereum-cryptography/utils');
+window.Buffer = window.Buffer || require("buffer").Buffer; 
+
 
 class MerkleTree {
   constructor(leaves) {
